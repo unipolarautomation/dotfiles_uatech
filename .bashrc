@@ -82,6 +82,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias grep='grep --color=auto'
     alias fgrep='fgrep --color=auto'
     alias egrep='egrep --color=auto'
+    alias get_idf='. /home/re/Bugs/Rosjects/esp/esp-idf/export.sh'
 fi
 
 # colored GCC warnings and errors
