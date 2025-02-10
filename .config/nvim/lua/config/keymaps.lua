@@ -12,3 +12,4 @@ local map = LazyVim.safe_keymap_set
 map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "<CR>", ":noh<CR>", options)
+map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })

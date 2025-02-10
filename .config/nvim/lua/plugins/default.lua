@@ -7,7 +7,18 @@
 -- * disable/enabled LazyVim plugins
 -- * override the configuration of LazyVim plugins
 return {
-    -- Configure LazyVim to load gruvbox
+    {
+        "nvim-tree/nvim-tree.lua",
+        version = "*",
+        lazy = false,
+        dependencies = {
+            "nvim-tree/nvim-web-devicons",
+        },
+        config = function()
+            require("nvim-tree").setup {}
+        end,
+    },
+
     {
         "folke/snacks.nvim",
         ---@type snacks.Config
@@ -20,7 +31,6 @@ return {
             picker = {
                 sources = {
                     explorer = {
-                        hidden = true
                         -- your explorer picker configuration comes here
                         -- or leave it empty to use the default settings
                     }
@@ -35,8 +45,7 @@ return {
             colorscheme = "catppuccin",
         },
     },
-
-    -- change trouble config
+        -- change trouble config
     {
         "folke/trouble.nvim",
         -- opts will be merged with the parent spec
