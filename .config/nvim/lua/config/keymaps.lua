@@ -13,3 +13,7 @@ map("n", ";", ":", { desc = "CMD enter command mode" })
 map("i", "jk", "<ESC>")
 map("n", "<CR>", ":noh<CR>", options)
 map("n", "<C-n>", "<cmd>NvimTreeToggle<CR>", { desc = "nvimtree toggle window" })
+
+map("n", "<leader>Nff", "<cmd>Neogen file<CR>", { desc = "Generate Doxygen comment of type file." })
+map("n", "<leader>Nfn", "<cmd>Neogen func<CR>", { desc = "Generate Doxygen comment of type func." })
+map("n", "<leader>Nfc", "<cmd>Neogen class<CR>", { desc = "Generate Doxygen comment of type class" })

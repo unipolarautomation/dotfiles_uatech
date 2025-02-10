@@ -8,6 +8,11 @@
 -- * override the configuration of LazyVim plugins
 return {
     {
+        "danymat/neogen",
+        config = true,
+    },
+
+    {
         "nvim-tree/nvim-tree.lua",
         version = "*",
         lazy = false,
